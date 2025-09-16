@@ -1,5 +1,6 @@
  
  import React from "react";
+ import styled from 'styled-components' ;
  export const SeriesCard = ({ data }) => {
 
   //   console.log(props);
@@ -36,25 +37,25 @@
     text-transform: capitalize;
   `;
 
-  const ratingClass = rating >= 8.5 ? styles.super_hit : styles.average;
+  const ratingClass = rating >= 8.5 ? styled.super_hit : styled.average;
 
   return (
-    <li className={styles.card}>
+    <li className={styled.card}>
       <div>
         <img src={img_url} alt={name} width="40%" height="40%" />
       </div>
-      {/* <div className={styles["card-content"]}> */}
+      {/* <div className={styled["card-content"]}> */}
       <div className="flex flex-col gap-6 py-[3.2rem] px-[1.2rem]">
         <h2>Name: {name} </h2>
         <Rating>
           Rating:
-          <span className={`${styles.rating} ${ratingClass}`}>{rating}</span>
+          <span className={`${styled.rating} ${ratingClass}`}>{rating}</span>
         </Rating>
         <p className="text-3xl font-bold underline text-cyan-300">
           Summary: {description}{" "}
         </p>
         <p>Genre: {genre.join(", ")} </p>
-        <p>Cast: {cast.join(", ")}</p>
+        <p>Cast: {cast && cast.join(", ")}</p>
         <a href={watch_url} target="_blank">
           {/* <button style={btn_style}>Watch Now</button> */}
           <ButtonThapa rating={rating}>Watch Now</ButtonThapa>
