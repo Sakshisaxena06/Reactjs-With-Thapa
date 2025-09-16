@@ -31,16 +31,12 @@ import React from "react";
 
 const NetflixSeries = () => {
   return (
-    <ul class="grid grid-three--cols">
-  
-      {seriesData.map((curElem) =>( <SeriesCard  key = {curElem.id} curElem = {curElem} />       
-     ) )}
+    <ul className="grid grid-three--cols">
+      {seriesData.map((curElem) => (
+        <SeriesCard key={curElem.id} data={curElem} />
+      ))}
     </ul>
   );
 };
 
-
 export default NetflixSeries;
-
-
-
