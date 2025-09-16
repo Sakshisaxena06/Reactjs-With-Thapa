@@ -1,0 +1,16 @@
+[
+  {
+    "id": "Stranger Thing",
+    "name": "Stranger Thing",
+    "img_url": "image copy.png",
+    "rating": "9",
+    "watch_url": "https://www.netflix.com/title/80057281"
+  },
+  {
+    "id": "Witcher",
+    "name": "Witcher",
+    "img_url": "image.png",
+    "rating": "8",
+    "watch_url": "https://www.netflix.com/title/80189685"
+  }
+]
