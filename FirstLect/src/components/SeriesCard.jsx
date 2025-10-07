@@ -1,4 +1,5 @@
  
+ import styles from "./Netflix.module.css";
  import React from "react";
  import styled from 'styled-components' ;
  export const SeriesCard = ({ data }) => {
@@ -53,8 +54,8 @@
         </Rating>
         <p className="text-3xl font-bold underline text-cyan-300">
           Summary: {description}{" "}
-        </p>
-        <p>Genre: {genre.join(", ")} </p>
+        </p>n
+        <p>Genre: { genre && genre.join(", ")} </p>
         <p>Cast: {cast && cast.join(", ")}</p>
         <a href={watch_url} target="_blank">
           {/* <button style={btn_style}>Watch Now</button> */}
