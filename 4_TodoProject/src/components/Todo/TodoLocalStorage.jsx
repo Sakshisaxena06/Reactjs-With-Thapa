@@ -1,10 +1,17 @@
 import React from "react";
- const TodosKey = "reactTodo"
+const TodosKey = "reactTodo";
+
+// get todos from localStorage
 export const getLocalStorageTodoData = () => {
-        const rawTodos = localStorage.getItem(TodosKey);
-    if (!rawTodos) return [];
-    return JSON.parse(rawTodos);
-}
+  const saved = localStorage.getItem(TodosKey);
+  if (saved) {
+    return JSON.parse(saved);   // change JSON string back to array
+  } else {
+    return [];   // if nothing saved, return empty array
+  }
+};
+
+// save todos to localStorage
 export const setLocalStorageTodoData = (task) => {
-  return  localStorage.setItem(TodosKey, JSON.stringify(task));
-}
+  localStorage.setItem(TodosKey, JSON.stringify(task)); // save array as JSON string
+};
