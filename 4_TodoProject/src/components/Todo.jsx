@@ -14,13 +14,15 @@ export const Todo = () => {
 
    
  // todo add local storage
-setLocalStorageTodoData(task);
+ useEffect (()=>{
+    setLocalStorageTodoData(task)
+ },[task] );
 
 // submit form 
      const handleFormSubmit= (inputValue) => {
     const {id, content , checked} = inputValue;
 
-    
+
 // if content is empty or not 
     if(!content) return ;
 // if(task.includes(inputValue)){  // agr phle se same value h tho vo ffirse use store ni krega ..
@@ -36,7 +38,7 @@ setTask((prevTask) => [...prevTask , {id : id , content : content , checked:chec
 
 } ; 
   // todo add local storage
-localStorage.setItem(TodosKey,JSON.stringify(task));
+// localStorage.setItem(TodosKey,JSON.stringify(task));
 
 
 // delete task 
