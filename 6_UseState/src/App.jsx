@@ -4,12 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Counter } from './components/useState'
 import React from 'react'
+import CounterChallenge from './components/useState/Challenge'
+// import "./Hooks.css"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return <section>
-    <Counter/>
+    {/* <Counter/> */}
+    <CounterChallenge/>
   </section>
 }
 
