@@ -5,6 +5,7 @@ import './App.css'
 import { Counter } from './components/useState'
 import React from 'react'
 import CounterChallenge from './components/useState/Challenge'
+import { RegistrationForm } from './components/useState/Registration'
 // import "./Hooks.css"
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
 
   return <section>
     {/* <Counter/> */}
-    <CounterChallenge/>
+    {/* <CounterChallenge/> */}
+    <RegistrationForm/>
   </section>
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hooks.css";
+import "../../components/Hooks.css"
 import { useState } from "react";
 export const Counter = () => {
     // console.log(useState(5));
