@@ -7,6 +7,9 @@ import React from 'react'
 import CounterChallenge from './components/useState/Challenge'
 import { RegistrationForm } from './components/useState/Registration'
 import { RegistrationFormReact } from './components/useState/RegistrationReact'
+import { ReactUseEffect } from './components/useEffect'
+import { Challenge } from './components/useEffect/EffectChallenge'
+import { CleanUp } from './components/useEffect/CleanUp'
 // import "./Hooks.css"
 
 function App() {
@@ -16,7 +19,10 @@ function App() {
     {/* <Counter/> */}
     {/* <CounterChallenge/> */}
     {/* <RegistrationForm/>  */}
-    <RegistrationFormReact/>
+    {/* <RegistrationFormReact/> */}
+    {/* <ReactUseEffect/> */}
+    {/* <Challenge/> */}
+    <CleanUp/>
   </section>
 }
 
