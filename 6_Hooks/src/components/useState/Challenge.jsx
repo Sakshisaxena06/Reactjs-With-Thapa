@@ -1,8 +1,7 @@
 import React from "react";
 
-
 import { useState } from "react";
-import "../../components/Hooks.css"
+import "../Hooks.css";
 
 const CounterChallenge = () => {
   const [count, setCount] = useState(0);
