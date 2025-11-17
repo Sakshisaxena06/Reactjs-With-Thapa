@@ -1,0 +1,59 @@
+/* Basic layout styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Counter box */
+.counter {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.counter:hover {
+  transform: scale(1.05);
+}
+
+/* Heading text */
+.counter p {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Number display */
+.odometer {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #ff4b2b;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title under counter */
+.title {
+  font-size: 4rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .counter {
+    padding: 30px 40px;
+  }
+  .odometer {
+    font-size: 5rem;
+  }
+}
