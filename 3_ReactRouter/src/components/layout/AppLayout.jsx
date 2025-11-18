@@ -8,8 +8,9 @@ const AppLayout = () => {
 
   const navigation = useNavigation();
   console.log(navigation);
-  if(navigation.state === "loading") return 
-<Loading/>
+  if (navigation.state === "loading") {
+    return <Loading />;
+  }
   
   return (
 
