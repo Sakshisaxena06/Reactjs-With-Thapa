@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { About } from "./pages/About";
 import { Movie } from "./pages/Movie";
 import { Home } from "./pages/Home";
-import { Contact } from "./pages/Contact";
+import { Contact, contactData } from "./pages/Contact";
 import AppLayout from "./components/layout/AppLayout";
 import "./App.css";
 import { ErrorPage } from "./pages/ErrorPage";
@@ -26,7 +26,7 @@ const App = () => {
           element: <MovieDetails />,
           loader: getMoviesDetails,
         },
-        { path: "contact", element: <Contact /> },
+        { path: "contact", element: <Contact /> , action: contactData },
       ],
     },
   ]);

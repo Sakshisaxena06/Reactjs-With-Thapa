@@ -5,7 +5,7 @@ export const MovieDetails = () => {
   const movieData = useLoaderData();
   console.log(movieData);
 
-  const { Actor, Poster, Title, Type, Year, Plot, BoxOffice, imdbID } = movieData;
+  const { Actors, Poster, Title, Type, Year, Plot, BoxOffice, imdbID } = movieData;
 
   return (
     <li className="hero-container hero-movie-container">
@@ -23,7 +23,7 @@ export const MovieDetails = () => {
 
             <p className="ticket__current-price">Type: {Type}</p>
             <p className="ticket__current-price">Year: {Year}</p>
-            <p className="ticket__current-price">Actors: {Actor}</p>
+            <p className="ticket__current-price">Actors: {Actors}</p>
             <p className="ticket__current-price">Box Office: {BoxOffice}</p>
             <p className="ticket__current-price">Plot: {Plot}</p>
 
